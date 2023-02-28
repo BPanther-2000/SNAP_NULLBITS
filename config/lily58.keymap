@@ -36,13 +36,13 @@ bindings = <
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
 // |        |         |      |       |       |       |                     |   F7      |    F8      |       F9    |     F10     |    F11      |  F12  |
 // |        |         |      |       |       |       |                     |  BTCLR    |    BT0     |      BT1    |     BT2     |   BT/USB    |  HOME |
-// |        |         |      |       |       |       |                     |   BT ON   |   BT OFF   |             |    MUTE     |   VOL UP    |    `  |
+// |        |         |      |       |       |       |                     |EXT P_ON   |EXT P_OFF   |EXT P_TOG    |    MUTE     |   VOL UP    |    `  |
 // |        |         |      |       |       |       |       |  | reset    |           |      {     |     }       |    PREV     |   VOL DN    |  NEXT |
 //                           |       |       |       |       |  | Boot     |           |      [     |     ]       |
 bindings = <
      &trans   &trans   &trans  &trans  &trans  &trans                        &kp F7     &kp F8        &kp F9        &kp F10      &kp F11        &kp F12
      &trans   &trans   &trans  &trans  &trans  &trans                        &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &out OUT_TOG   &kp HOME
-     &trans   &trans   &trans  &trans  &trans  &trans                        &trans  &trans    &trans        &kp C_MUTE   &kp C_VOL_UP   &kp GRAVE
+     &trans   &trans   &trans  &trans  &trans  &trans                        &ext_power EP_ON  &ext_power EP_ON    &ext_power EP_TOG &kp C_MUTE   &kp C_VOL_UP  &kp GRAVE
      &trans   &trans   &trans  &trans  &trans  &trans   &trans   &reset      &trans     &kp LBRC      &kp RBRC      &kp C_PREV   &kp C_VOL_DN   &kp C_NEXT
                                &trans  &trans  &trans   &trans   &bootloader &trans     &kp LBKT      &kp RBKT
 			>;
