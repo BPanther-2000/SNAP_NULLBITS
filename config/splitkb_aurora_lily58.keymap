@@ -58,16 +58,16 @@ bindings = <
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   |   F2   |   F3    |    F4    |  F5   |  F6  |                   |        |       |       |      |       |       |
-// |rgb TOG |       |  UP     |          |       |      |                   |        |       |       |      |       |       |
+// |       |       |    UP    |          |       |      |                   |        |       |       |      |       |       |
 // |       |  LEFT  |  DOWN   | RIGHT    |       |      |                   |        |       |       |      |       |       |
 // |       |        |         |          |       |      |        |  |       |        |       |       |      |       |       |
 //                            |          |       |      |        |  |       |        |       |       |
 			bindings = <
     &kp F1  &kp F2    &kp F3    &kp F4    &kp F5  &kp F6                       &trans  &trans  &trans  &trans &trans  &trans
-    &rgb_ug RGB_TOG &trans &kp UP    &trans &trans  &trans                    &trans  &trans  &trans  &trans &trans  &trans
+    &trans  &trans     &kp UP   &trans    &trans  &trans                       &trans  &trans  &trans  &trans &trans  &trans
     &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans  &trans                       &trans  &trans  &trans  &trans &trans  &trans
-    &trans  &kp BSLH  &kp PIPE  &trans    &trans  &trans                       &trans  &trans  &trans  &trans &trans  &trans
-                                &trans    &trans  &trans    &trans    &trans   &trans  &trans  &trans
+    &trans  &kp BSLH  &kp PIPE  &trans    &RGB_BRD  &RGB_BRI &trans   &trans   &trans  &trans  &trans  &trans &trans  &trans
+                        &RGB_TOG  &RGB_HUD  &RGB_HUI    &trans        &trans   &trans  &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
