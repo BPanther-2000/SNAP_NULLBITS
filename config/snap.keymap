@@ -20,7 +20,7 @@
 		sensors = <&left_encoder &right_encoder>;
 };
 
-/ {
+
 	keymap {
 		compatible = "zmk,keymap";
 
