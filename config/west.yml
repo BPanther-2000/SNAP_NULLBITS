@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/BPanther-2000/SNAP-BONGOCAT
+      url-base: https://github.com/BPanther-2000
   projects:
     - name: SNAP-BONGOCAT
       remote: zmkfirmware
