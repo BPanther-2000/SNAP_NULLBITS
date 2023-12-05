@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/BPanther-2000
   projects:
-    - name: SNAP-BONGOCAT
+    - name: SNAP_BONGOCAT
       remote: zmkfirmware
       revision: main
       import: app/west.yml
